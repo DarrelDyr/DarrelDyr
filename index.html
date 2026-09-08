@@ -1,15 +1,152 @@
 <!DOCTYPE html>
 <html lang="id">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Portfolio pribadi Muhammad Darrel Danadyaksa Raharja"><title>Darrel — Portfolio</title><link rel="stylesheet" href="style.css"></head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio pribadi Muhammad Darrel Danadyaksa Raharja">
+  <title>Darrel — Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
-<header class="navbar"><a class="brand" href="#home">DARREL<span>.</span></a><nav><a href="#home">Home</a><a href="#about">Tentang</a><a href="#projects">Project</a><a href="#certificates">Sertifikat</a><a href="#contact">Kontak</a></nav></header>
-<main>
-<section id="home" class="hero"><div class="hero-content"><p class="eyebrow">PORTFOLIO PRIBADI</p><h1>Muhammad Darrel<br><span>Danadyaksa Raharja</span></h1><p class="hero-text">Pelajar bidang Sistem Informasi Jaringan dan Aplikasi yang tertarik pada networking, server, Docker, IoT, dan pengembangan teknologi.</p><div class="buttons"><a class="btn primary" href="#projects">Lihat Project</a><a class="btn secondary" href="#certificates">Lihat Sertifikat</a></div></div><div class="hero-profile"><div class="profile-glow"></div><div class="profile-ring"><img src="assets/profile/darrel-profile.png" alt="Foto profil Muhammad Darrel"></div><div class="profile-caption"><strong>Muhammad Darrel</strong><span>SIJA • Networking • IoT</span></div></div></section>
-<section id="about" class="section"><div class="section-title"><p class="eyebrow">ABOUT ME</p><h2>Tentang Saya</h2></div><div class="about-grid"><div class="about-text"><p>Halo! Saya <strong>Muhammad Darrel Danadyaksa Raharja</strong>. Website ini digunakan untuk menyimpan dan menampilkan portofolio, project, serta sertifikat yang saya peroleh selama belajar dan mengembangkan kemampuan di bidang teknologi.</p><p>Fokus saya meliputi jaringan komputer, Linux, Docker, web server, IoT, mikrokontroler, dan pengembangan project teknologi.</p></div><div class="skills"><span>Linux</span><span>Docker</span><span>Networking</span><span>HTML/CSS</span><span>Python</span><span>ESP32</span><span>Server</span><span>IoT</span></div></div></section>
-<section id="projects" class="section alt"><div class="section-title"><p class="eyebrow">PROJECTS</p><h2>Project Saya</h2></div><div class="project-grid"><article class="project-card"><div class="project-number">01</div><h3>Docker Server</h3><p>Konfigurasi layanan server menggunakan Docker dan Docker Compose.</p><div class="tags"><span>Docker</span><span>Linux</span><span>Server</span></div></article><article class="project-card"><div class="project-number">02</div><h3>Robot Berkaki 4</h3><p>Pengembangan robot quadruped berbasis ESP32, servo, dan PCA9685.</p><div class="tags"><span>ESP32</span><span>IoT</span><span>Servo</span></div></article><article class="project-card"><div class="project-number">03</div><h3>Web & Networking</h3><p>Project web server, DNS, FTP, Samba, DHCP, dan layanan jaringan lainnya.</p><div class="tags"><span>Web</span><span>Network</span><span>Linux</span></div></article></div></section>
-<section id="certificates" class="section"><div class="section-title"><p class="eyebrow">CERTIFICATES</p><h2>Sertifikat</h2><p class="section-desc">Semua file gambar dan PDF di folder sertifikat GitHub akan dimuat otomatis.</p></div><div id="certificateStatus" class="certificate-status">Memuat sertifikat...</div><div id="certificateGrid" class="certificate-grid"></div></section>
-<section id="contact" class="section contact"><div><p class="eyebrow">CONTACT</p><h2>Mari terhubung.</h2><p>Ganti email dan media sosial kamu di bagian ini.</p></div><a class="btn primary" href="mailto:emailkamu@example.com">Hubungi Saya</a></section>
-</main><footer><p>© 2026 Muhammad Darrel Danadyaksa Raharja</p></footer>
-<div id="certificateModal" class="modal" onclick="closeCertificate(event)"><div class="modal-content"><button class="close" onclick="closeCertificate()">×</button><div id="modalBody"></div></div></div>
-<script src="config.js"></script><script src="script.js"></script>
-</body></html>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <a class="brand" href="#home">DARREL<span>.</span></a>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">Tentang</a>
+      <a href="#projects">Project</a>
+      <a href="#certificates">Sertifikat</a>
+      <a href="#contact">Kontak</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">PORTFOLIO PRIBADI</p>
+        <h1>Muhammad Darrel<br><span>Danadyaksa Raharja</span></h1>
+        <p class="hero-text">Pelajar bidang Sistem Informasi Jaringan dan Aplikasi yang tertarik pada networking, server, Docker, IoT, dan pengembangan teknologi.</p>
+        <div class="buttons">
+          <a class="btn primary" href="#projects">Lihat Project</a>
+          <a class="btn secondary" href="#certificates">Lihat Sertifikat</a>
+        </div>
+      </div>
+      <div class="hero-profile">
+        <div class="profile-glow"></div>
+        <div class="profile-ring">
+          <img src="assets/profile/darrel-profile.png" alt="Foto profil Muhammad Darrel">
+        </div>
+        <div class="profile-caption">
+          <strong>Muhammad Darrel</strong>
+          <span>SIJA • Networking • IoT</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+      <div class="section-title">
+        <p class="eyebrow">ABOUT ME</p>
+        <h2>Tentang Saya</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>Halo! Saya <strong>Muhammad Darrel Danadyaksa Raharja</strong>. Website ini digunakan untuk menyimpan dan menampilkan portofolio, project, serta sertifikat yang saya peroleh selama belajar dan mengembangkan kemampuan di bidang teknologi.</p>
+          <p>Fokus saya meliputi jaringan komputer, Linux, Docker, web server, IoT, mikrokontroler, dan pengembangan project teknologi.</p>
+        </div>
+        <div class="skills">
+          <span>Linux</span>
+          <span>Docker</span>
+          <span>Networking</span>
+          <span>HTML/CSS</span>
+          <span>Python</span>
+          <span>ESP32</span>
+          <span>Server</span>
+          <span>IoT</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section alt">
+      <div class="section-title">
+        <p class="eyebrow">PROJECTS</p>
+        <h2>Project Saya</h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-number">01</div>
+          <h3>Docker Server</h3>
+          <p>Konfigurasi layanan server menggunakan Docker dan Docker Compose.</p>
+          <div class="tags">
+            <span>Docker</span>
+            <span>Linux</span>
+            <span>Server</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-number">02</div>
+          <h3>Robot Berkaki 4</h3>
+          <p>Pengembangan robot quadruped berbasis ESP32, servo, dan PCA9685.</p>
+          <div class="tags">
+            <span>ESP32</span>
+            <span>IoT</span>
+            <span>Servo</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-number">03</div>
+          <h3>Web & Networking</h3>
+          <p>Project web server, DNS, FTP, Samba, DHCP, dan layanan jaringan lainnya.</p>
+          <div class="tags">
+            <span>Web</span>
+            <span>Network</span>
+            <span>Linux</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CERTIFICATES SECTION -->
+    <section id="certificates" class="section">
+      <div class="section-title">
+        <p class="eyebrow">CERTIFICATES</p>
+        <h2>Sertifikat</h2>
+        <p class="section-desc">Semua file gambar dan PDF di folder sertifikat GitHub akan dimuat otomatis.</p>
+      </div>
+      <div id="certificateStatus" class="certificate-status">Memuat sertifikat...</div>
+      <div id="certificateGrid" class="certificate-grid"></div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section contact">
+      <div>
+        <p class="eyebrow">CONTACT</p>
+        <h2>Mari terhubung.</h2>
+        <p>Ganti email dan media sosial kamu di bagian ini.</p>
+      </div>
+      <a class="btn primary" href="mailto:emailkamu@example.com">Hubungi Saya</a>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Muhammad Darrel Danadyaksa Raharja</p>
+  </footer>
+
+  <!-- MODAL -->
+  <div id="certificateModal" class="modal" onclick="closeCertificate(event)">
+    <div class="modal-content">
+      <button class="close" onclick="closeCertificate()">×</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
